@@ -7,7 +7,7 @@ import joblib
 
 
 # -------- Load Data --------
-df = pd.read_csv(r"C:\Users\Marley Amged\Downloads\archive\heart.csv")   # أو اسم الملف عندك
+df = pd.read_csv(r"C:\Users\Marley Amged\Downloads\archive\heart.csv")
 
 # Encode categorical columns
 cat_cols = ["Sex", "ChestPainType", "RestingECG", "ExerciseAngina", "ST_Slope"]

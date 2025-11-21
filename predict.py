@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+# Page settings
+st.set_page_config(
+    page_title="Heart Disease Predictor",
+    page_icon="❤️",
+    layout="wide"
+)
+
 # Load model and encoders
 @st.cache_resource
 def load_model():
@@ -11,12 +18,7 @@ def load_model():
 
 model, label_encoders = load_model()
 
-# Page settings
-st.set_page_config(
-    page_title="Heart Disease Predictor",
-    page_icon="❤️",
-    layout="wide"
-)
+
 
 # Dark mode styling
 st.markdown("""
